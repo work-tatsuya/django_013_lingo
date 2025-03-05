@@ -1,3 +1,10 @@
+# Django フレームワーク（バージョン 4.2 以上 5 未満を指定）
+# 4.2 は LTS（長期サポート版）で、安定した運用が可能
 Django>=4.2,<5
+
+# 本番環境向けの WSGI サーバー
 gunicorn
+
+# PostgreSQL 用の Python ドライバ
+# Dockerfile で libpq-dev をインストールしているため、通常の psycopg2 でも問題ない
 psycopg2-binary
